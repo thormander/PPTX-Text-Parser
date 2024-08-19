@@ -1,13 +1,18 @@
 # PPTX-Text-Parser
 
-This program is an adaptation of the [PPTX PowerPoint Translations](https://github.com/thormander/PPTX-Translator-OpenAI). The script is designed to extract text from PowerPoint (`.pptx`) files, clean the extracted text, and save it to a CSV file that can be used for further analysis, such as creating vector stores for semantic search.
+This program is an adaptation of the [PPTX PowerPoint Translations](https://github.com/thormander/PPTX-Translator-OpenAI). The script is designed to extract text from PowerPoint (`.pptx`) files and save it to a CSV file that can be used for further analysis, such as creating vector stores for semantic search.
+
+**Each row of the CSV will contain all the text from one slide**
+
+This program can be run on mulitple files within a folder, or a individual file. 
+
+The ouput (for my use case) was originally meant to be loaded into KNIME Analytics Platform for further cleaning and processing, but it can be used in any other use case as long as you can intake a csv.
 
 ## Features
 
 - **Extract Text from PowerPoint Files**: The script processes individual `.pptx` files or entire folders of PowerPoint presentations.
 - **Save Output to CSV**: The extracted text is saved to a CSV file in the same directory as the script.
-- **Unique Identification**: Each slide's content is labeled with a `FileName_SlideNumber` identifier to ensure traceability.
-- **Seamless KNIME Integration**: The CSV file can be easily loaded into KNIME for further text processing, embedding, and vector storage.
+- **Unique Identification**: Each slide's content is labeled with a `FileName_SlideNumber` identifier
 
 ## Usage
 
