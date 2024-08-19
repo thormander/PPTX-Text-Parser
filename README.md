@@ -44,13 +44,6 @@ Example:
 | presentation_Slide2  | "Text from the second slide."                                       |
 | presentation_Slide3  | "Text from the third slide."                                        |
 
-## Cleaning Process
-
-You can further clean the extracted text in KNIME by:
-
-- **Removing excess whitespace**
-- **Filtering out non-ASCII characters**
-- **Excluding short documents based on word or character count**
 
 ## License
 
